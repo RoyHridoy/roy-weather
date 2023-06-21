@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyWeather - Know Your Current Weather Condition</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header area start -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-auto me-auto">
+                            <a href="" class="logo ">Roy<span class="highlights">Weather</span></a>
+                        </div>
+                        <div class="col-auto">
+                            <div class="btn-group mode">
+                                <button type="button" class="btn" id="dark">Dark Mode</button>
+                                <button type="button" class="btn btn-primary active" id="default">Light Mode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Search area start -->
+    <section class="search-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="search-bar text-center">
+                        <div class="search-text">
+                            <h2 class="text-uppercase">Search <span class="highlights">Current</span> Weather</h2>
+                        </div>
+                        <!-- Search Tab Start -->
+                        <div class="search-tab">
+                            <ul class="nav nav-pills nav-fill mb-3">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#ct-name"
+                                        type="button">City Name</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#zip" type="button">
+                                        Zip Code</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="ct-name">
+                                    <div class="input-group">
+                                        <input type="search" name="city-name" id="city-name" class="form-control"
+                                            placeholder="example: Mymensingh" required>
+                                        <button class="btn btn-primary" id="city-search">Search</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="zip">
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-12 col-sm-12">
+                                            <label for="country-code" class="form-label">Select a Country</label>
+                                            <select name="country-code" id="country-code" class="form-select" required>
+                                                <!-- <option value="">Select a country</option> -->
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12 col-sm-12">
+                                            <label for="zip-code" class="form-label">Zip Code</label>
+                                            <input type="number" name="zip-code" id="zip-code" class="form-control"
+                                                required>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12 col-sm-12 align-self-end">
+                                            <button class="btn btn-primary w-100" id="zip-search">Search</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Search Tab End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search area end -->
+
+    <!-- Weather area start -->
+    <section class="weather-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div id="weather-data">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Weather area end -->
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div id="footer-content" class="text-center"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/axios.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

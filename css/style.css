@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+.form-select:focus {
+    border-color: rgba(5, 152, 98, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(5, 152, 98, 0.6);
+    outline: 0 none;
+}
+
+.form-control,
+.form-select {
+    border-color: #999999;
+}
+
+.dark .form-control,
+.dark .form-select {
+    border-color: #aaaaaa;
+}
+
+body {
+    padding: 30px 0px;
+    background-color: #dddddd;
+}
+
+.btn-group {
+    border: 1px solid #454545;
+}
+
+.btn-primary,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #059862;
+    border-color: #059862;
+}
+
+.btn-primary:hover,
+.btn.active {
+    background-color: #066844;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #059862
+}
+
+.header-area {
+    padding-top: 50px;
+    padding: 10px 0px;
+}
+
+.logo {
+    color: #454545;
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.highlights {
+    background-color: #454545;
+    color: #ffffff;
+    padding: 0px 15px;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+h2 .highlights {
+    padding: 2px 15px;
+}
+
+.search-bar {
+    background-color: #ffffff;
+    margin-top: 40px;
+    padding: 0px 30px 30px;
+}
+
+.search-text {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.search-text h2 {
+    font-size: 24px;
+}
+
+.search-tab .tab-content {
+    padding: 20px 30px 30px;
+}
+
+.search-tab {
+    border: 1px solid #454545;
+    padding: 20px 0px 30px;
+}
+
+.search-tab .nav {
+    border-bottom: 1px solid #454545;
+    padding: 0px 20px 20px;
+}
+
+#weather-data {
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 18px;
+    background: #fff;
+}
+
+.tempareture {
+    color: #ff0000;
+    font-weight: 700;
+}
+
+.tempareture img {
+    border: 1px sold #454545;
+    display: inline-block;
+    padding: 5px 15px 5px 0px;
+}
+
+.time {
+    color: #454545;
+    font-weight: 600;
+}
+
+.current-weather,
+.country {
+    background-color: #454545;
+    display: inline-block;
+    color: #ffffff;
+    padding: 3px 10px;
+    margin: 10px 0px;
+}
+
+button.nav-link {
+    color: #454545;
+    font-weight: 500;
+    border: 1px solid #454545;
+}
+
+.nav-fill .nav-item,
+.nav-fill>.nav-link {
+    margin: 0px 10px;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='black' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+}
+
+#footer-content {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 15px 0px;
+}
+
+#footer-content a {
+    color: #059862
+}
+
+/*
+Dark color mode
+*/
+.dark textarea:focus,
+.dark input[type="text"]:focus,
+.dark input[type="password"]:focus,
+.dark input[type="datetime"]:focus,
+.dark input[type="datetime-local"]:focus,
+.dark input[type="date"]:focus,
+.dark input[type="month"]:focus,
+.dark input[type="time"]:focus,
+.dark input[type="week"]:focus,
+.dark input[type="number"]:focus,
+.dark input[type="email"]:focus,
+.dark input[type="url"]:focus,
+.dark input[type="search"]:focus,
+.dark input[type="tel"]:focus,
+.dark input[type="color"]:focus,
+.dark .uneditable-input:focus,
+.dark .form-select:focus {
+    border-color: rgba(255, 131, 131, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 131, 131, 0.6);
+    outline: 0 none;
+}
+
+.dark input {
+    color: #dddddd !important;
+}
+
+body.dark {
+    background-color: #374151;
+    color: #dddddd
+}
+
+body.dark .btn-primary {
+    background-color: #FF8383;
+    border-color: #FF8383;
+}
+
+.dark button.nav-link {
+    border-color: #aaaaaa;
+}
+
+.dark .search-bar {
+    background-color: #1F2937;
+}
+
+.dark .nav-pills .nav-link.active {
+    background-color: #FF8383;
+    color: #ffffff;
+    border-color: #FF8383
+}
+
+.dark,
+.dark .logo,
+.dark .btn {
+    color: #ffffff;
+}
+
+.dark .highlights {
+    background-color: #efefef;
+    color: #000000;
+}
+
+.dark .btn-group {
+    border-color: #ffffff;
+}
+
+.dark .btn.active,
+.dark .search-tab .nav,
+.dark .search-tab {
+    border-color: #aaaaaa;
+}
+
+.dark .nav-link,
+.dark .nav-link {
+    color: #ffffff;
+}
+
+.dark .nav-link:focus,
+.dark .nav-link:hover {
+    color: #FF8383;
+}
+
+.dark .form-control,
+.dark .form-control:focus {
+    background-color: #374151;
+    border-color: #999999;
+}
+
+.dark ::placeholder {
+    color: #ddd;
+}
+
+.dark #weather-data,
+.dark #footer-content {
+    border-color: #1F2937;
+    background-color: #1F2937;
+}
+
+.dark #footer-content a {
+    color: #FF8383;
+}
+
+.dark .btn:first-child:active,
+.dark :not(.btn-check)+.btn:active {
+    background-color: #FF8383;
+    border-color: #FF8383;
+}
+
+.dark .form-select {
+    background-color: #374151;
+    color: #fff;
+}
+
+.dark .current-weather,
+.dark .country {
+    background-color: #bbbbbb;
+    color: #000000;
+}
+
+.dark .time {
+    color: #dddddd;
+}
+
+.dark .form-select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 400px) and (max-width: 768px) {
+    .header-area .col-auto {
+        margin: 0 auto;
+    }
+
+    .header-area .me-auto {
+        margin-bottom: 30px;
+    }
+
+    .search-tab #zip .form-control,
+    .search-tab #zip .form-select {
+        margin-bottom: 30px;
+    }
+}
